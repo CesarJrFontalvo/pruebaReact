@@ -1,10 +1,10 @@
 import React from 'react';
-import { Button, Container, Form, FormControl, NavDropdown, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Form,  Nav, Navbar } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { logout } from '../actions/actionLogin';
 
-import { useForm } from '../hooks/useForm';
+// import { useForm } from '../hooks/useForm';
 import '../index.css'
 
 const NavbarBlock = () => {
@@ -12,12 +12,12 @@ const NavbarBlock = () => {
 
     const dispatch = useDispatch();
 
-    const [formValues, handleInputChange] = useForm({
-        searchText: ''
+    // const [formValues, handleInputChange] = useForm({
+    //     searchText: ''
         
-    });
+    // });
 
-    const { searchText} = formValues;
+    // const { searchText} = formValues;
 
     // const handleSearch = (e)=>{
     //     e.preventDefault();
