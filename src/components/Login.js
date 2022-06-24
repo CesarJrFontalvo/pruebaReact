@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import {useForm } from '../hooks/useForm';
+import {UseForm } from '../hooks/UseForm';
 import {useDispatch} from 'react-redux';
 import {loginEmailPassword, loginGoogle} from '../actions/actionLogin';
 
@@ -9,7 +9,7 @@ function Login() {
     
     const dispatch = useDispatch();// crear la referencia del dispatch
 
-    const [ values, handleInputChange ] = useForm({
+    const [ values, handleInputChange ] = UseForm({
         email: '',
         password: ''
     })
