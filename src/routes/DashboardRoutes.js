@@ -3,14 +3,14 @@ import {
     Navigate
 } from 'react-router-dom';
 import List from '../components/List';
+import NavbarBlock from '../components/Navbar';
 
-// import NavbarBlock from '../components/Navbar';
 
 export const DashboardRoutes = () => {
     return ( 
         <>
             <div>
-            {/* <NavbarBlock/> */}
+            <NavbarBlock/>
                 <Routes>
                     <Route path="/" element={<List />} />
                     

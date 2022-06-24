@@ -46,28 +46,11 @@ const NavbarBlock = () => {
                 style={{ maxHeight: '100px' , color:'white'}}
                 navbarScroll
             >
-                <Nav.Link as={Link} to="home">Todos</Nav.Link>
-                <Nav.Link as={Link} to="#action2">Más valoradas</Nav.Link>
-                <Nav.Link as={Link} to="#" >
-                Menos valoradas
-                </Nav.Link>
-                <NavDropdown title="Registrar Peliculas" id="collasible-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/registro-pelicula">Registrar pelicula en la lista</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/registro-slider">Registrar pelicula en el Slider</NavDropdown.Item>
-                </NavDropdown>
+               
             </Nav>
 
             <Form className="d-flex " >
-                <FormControl 
-                type="search"
-                placeholder="Busca tu pelicula "
-                className="me-3"
-                aria-label="Search"
-                name="searchText"
-                value={searchText}
-                onChange={handleInputChange}
-                />
-                <Button type="submit" className="me-2" variant="warning">Buscar</Button>
+               
                 <Button variant="danger" onClick={() => handleLogout()}>Logout</Button>
             </Form>
             
